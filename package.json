@@ -1,0 +1,36 @@
+{
+  "name": "loopback-connector-realtime-database",
+  "version": "1.0.0",
+  "description": "Firebase Realtime Database connector for the LoopBack framework.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://henriquecarv@github.com/henriquecarv/loopback-connector-realtime-database.git"
+  },
+  "keywords": [
+    "connector",
+    "datasource",
+    "henriquecarv",
+    "loopback",
+    "strongloop",
+    "realtime",
+    "firebase"
+  ],
+  "author": "Henrique Carvalho da Cruz <henriquecarv.cruz@gmail.com> (https://henriquecarv.com)",
+  "license": "MIT",
+  "homepage": "https://github.com/henriquecarv/loopback-connector-realtime-database#readme",
+  "dependencies": {
+    "firebase-admin": "^6.0.0",
+    "loopback-connector": "^4.5.1"
+  },
+  "devDependencies": {
+    "dotenv": "^6.0.0",
+    "eslint": "^5.3.0",
+    "eslint-config-loopback": "^11.0.0",
+    "loopback-datasource-juggler": "^3.23.0",
+    "nodemon": "^1.18.3"
+  }
+}
