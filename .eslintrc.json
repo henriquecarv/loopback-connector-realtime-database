@@ -2,7 +2,8 @@
 	"extends": "loopback",
 	"rules": {
 		"indent": ["error", "tab"],
-		"max-len": ["error", 120]
+		"max-len": ["error", 120],
+		"operator-linebreak": "off"
 	},
 	"parserOptions": {
 		"sourceType": "module",
