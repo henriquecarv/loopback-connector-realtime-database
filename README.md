@@ -3,7 +3,10 @@
 Firebase Realtime Database connector for the LoopBack framework.
 
 [![wercker status](https://app.wercker.com/status/e73beab61c45deff0b954b62855a255a/s/master "wercker status")](https://app.wercker.com/project/byKey/e73beab61c45deff0b954b62855a255a)
+[![npm](https://img.shields.io/npm/dt/loopback-connector-realtime-database.svg)](https://www.npmjs.com/package/loopback-connector-realtime-database.svg)
+[![npm](https://img.shields.io/npm/v/loopback-connector-realtime-database.svg)](https://www.npmjs.com/package/loopback-connector-realtime-database)
 [![LICENSE](https://img.shields.io/github/license/henriquecarv/loopback-connector-realtime-database.svg)](./LICENSE)
+[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=henriquecarv/loopback-connector-realtime-database)](https://dependabot.com)
 
 ## System Requirements
 * **[NodeJS](https://nodejs.org/en/)** (version >= 8).
