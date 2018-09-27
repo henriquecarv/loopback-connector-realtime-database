@@ -2,6 +2,7 @@
 
 Firebase Realtime Database connector for the LoopBack framework.
 
+[![Henrique](https://img.shields.io/badge/maintainer-Henrique-blue.svg?colorB=0066ff)](https://henriquecarv.com)
 [![wercker status](https://app.wercker.com/status/e73beab61c45deff0b954b62855a255a/s/master "wercker status")](https://app.wercker.com/project/byKey/e73beab61c45deff0b954b62855a255a)
 [![npm](https://img.shields.io/npm/dt/loopback-connector-realtime-database.svg)](https://www.npmjs.com/package/loopback-connector-realtime-database)
 [![npm](https://img.shields.io/npm/v/loopback-connector-realtime-database.svg)](https://www.npmjs.com/package/loopback-connector-realtime-database)
