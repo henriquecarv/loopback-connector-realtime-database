@@ -2,8 +2,6 @@
 
 Firebase Realtime Database connector for the LoopBack framework.
 
-[![Henrique](https://img.shields.io/badge/maintainer-Henrique-blue.svg?colorB=0066ff)](https://henriquecarv.com)
-[![wercker status](https://app.wercker.com/status/e73beab61c45deff0b954b62855a255a/s/master "wercker status")](https://app.wercker.com/project/byKey/e73beab61c45deff0b954b62855a255a)
 [![npm](https://img.shields.io/npm/dt/loopback-connector-realtime-database.svg)](https://www.npmjs.com/package/loopback-connector-realtime-database)
 [![npm](https://img.shields.io/npm/v/loopback-connector-realtime-database.svg)](https://www.npmjs.com/package/loopback-connector-realtime-database)
 [![LICENSE](https://img.shields.io/github/license/henriquecarv/loopback-connector-realtime-database.svg)](./LICENSE)
@@ -11,7 +9,7 @@ Firebase Realtime Database connector for the LoopBack framework.
 
 ## System Requirements
 
-* **[NodeJS](https://nodejs.org/en/)** (version >= 10).
+- **[NodeJS](https://nodejs.org/en/)** (version >= 10).
 
 ## Installation
 
@@ -25,14 +23,14 @@ lb datasource
 
 Then the data source generator will prompt some questions like
 
-* Enter the data-source name: **Firebase** *(Choose your prefered name)*
-* Select the connector for Firebase: **other**
-* Enter the connector's module name **loopback-connector-realtime-database**
-* Install loopback-connector-realtime-database (Y/n) **y**
+- Enter the data-source name: **Firebase** _(Choose your prefered name)_
+- Select the connector for Firebase: **other**
+- Enter the connector's module name **loopback-connector-realtime-database**
+- Install loopback-connector-realtime-database (Y/n) **y**
 
 Then you should use a service account. Go to [Project Settings > Service Accounts][4] in the Google Cloud Platform Console. Generate a new private key and save the JSON file.
 
-You should fill the application's datasource file which is located in `/server/datasources.json`  with those details, You can find them in the downloaded JSON file from the Google Cloud Platform.
+You should fill the application's datasource file which is located in `/server/datasources.json` with those details, You can find them in the downloaded JSON file from the Google Cloud Platform.
 
 ```json
 "Firebase": {
@@ -46,12 +44,12 @@ You should fill the application's datasource file which is located in `/server/d
 
 ### Connection properties
 
-| Property | Type&nbsp;&nbsp; | Description | --- |
-| --- | --- | --- | --- |
-| projectId | String | project_id in the JSON file | --- |
-| clientEmail | String | client_email in the JSON file | --- |
-| privateKey | String | private_key in the JSON file | --- |
-| databaseName | String | Firebase's project id | Optional, Default: projectId | --- |
+| Property     | Type&nbsp;&nbsp; | Description                   | ---                          |
+| ------------ | ---------------- | ----------------------------- | ---------------------------- |
+| projectId    | String           | project_id in the JSON file   | ---                          |
+| clientEmail  | String           | client_email in the JSON file | ---                          |
+| privateKey   | String           | private_key in the JSON file  | ---                          |
+| databaseName | String           | Firebase's project id         | Optional, Default: projectId | --- |
 
 And you can actually store those private details as an Environment variables, Check [source-configuration][6]
 

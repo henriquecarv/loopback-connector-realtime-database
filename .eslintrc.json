@@ -1,12 +1,7 @@
 {
-	"extends": "loopback",
-	"rules": {
-		"indent": ["error", "tab"],
-		"max-len": ["error", 120],
-		"operator-linebreak": "off"
-	},
-	"parserOptions": {
-		"sourceType": "module",
-		"ecmaVersion": 2018
-	}
+  "extends": "airbnb-base",
+  "rules": {
+    "sort-keys": "warn",
+    "sort-vars": "warn"
+  }
 }
