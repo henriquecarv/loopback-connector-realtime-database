@@ -11,7 +11,7 @@ Firebase Realtime Database connector for the LoopBack framework.
 
 ## System Requirements
 
-* **[NodeJS](https://nodejs.org/en/)** (version >= 8).
+* **[NodeJS](https://nodejs.org/en/)** (version >= 10).
 
 ## Installation
 
