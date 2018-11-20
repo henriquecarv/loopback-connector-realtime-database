@@ -2,6 +2,7 @@
 
 Firebase Realtime Database connector for the LoopBack framework.
 
+[![Build Status](https://dev.azure.com/henriquecarvgit/henriquecarvgit/_apis/build/status/henriquecarv.loopback-connector-realtime-database)](https://dev.azure.com/henriquecarvgit/henriquecarvgit/_apis/build/status/henriquecarv.loopback-connector-realtime-database?branchName=master)
 [![npm](https://img.shields.io/npm/dt/loopback-connector-realtime-database.svg)](https://www.npmjs.com/package/loopback-connector-realtime-database)
 [![npm](https://img.shields.io/npm/v/loopback-connector-realtime-database.svg)](https://www.npmjs.com/package/loopback-connector-realtime-database)
 [![LICENSE](https://img.shields.io/github/license/henriquecarv/loopback-connector-realtime-database.svg)](./LICENSE)
