@@ -7,6 +7,7 @@ Firebase Realtime Database connector for the LoopBack framework.
 [![npm](https://img.shields.io/npm/v/loopback-connector-realtime-database.svg)](https://www.npmjs.com/package/loopback-connector-realtime-database)
 [![LICENSE](https://img.shields.io/github/license/henriquecarv/loopback-connector-realtime-database.svg)](./LICENSE)
 [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=henriquecarv/loopback-connector-realtime-database)](https://dependabot.com)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fhenriquecarv%2Floopback-connector-realtime-database.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fhenriquecarv%2Floopback-connector-realtime-database?ref=badge_shield)
 
 ## System Requirements
 
@@ -68,3 +69,6 @@ Copylefted (c) 2018 [Henrique Carvalho da Cruz][1] Licensed under the [MIT licen
 [4]: https://console.cloud.google.com/projectselector/iam-admin/serviceaccounts
 [5]: http://loopback.io/getting-started/
 [6]: https://loopback.io/doc/en/lb3/Environment-specific-configuration.html#data-source-configuration
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fhenriquecarv%2Floopback-connector-realtime-database.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fhenriquecarv%2Floopback-connector-realtime-database?ref=badge_large)
