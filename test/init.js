@@ -13,7 +13,7 @@ try {
   global.config = config;
 
   global.getDataSource = global.getSchema = () => {
-    const db = new DataSource(require('../', config));
+    const db = new DataSource(require('../'), config);
 
     db.log = (log) => {
       console.log(log);
