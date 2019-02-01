@@ -25,7 +25,7 @@
   "homepage": "https://github.com/henriquecarv/loopback-connector-realtime-database#readme",
   "bugs": "https://github.com/henriquecarv/loopback-connector-realtime-database/issues",
   "dependencies": {
-    "firebase-admin": "^6.5.0",
+    "firebase-admin": "^7.0.0",
     "loopback-connector": "^4.5.1"
   },
   "devDependencies": {
