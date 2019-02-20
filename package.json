@@ -26,7 +26,7 @@
   "bugs": "https://github.com/henriquecarv/loopback-connector-realtime-database/issues",
   "dependencies": {
     "firebase-admin": "^7.0.0",
-    "loopback-connector": "^4.5.1"
+    "loopback-connector": "^4.6.0"
   },
   "devDependencies": {
     "@babel/core": "^7.3.3",
@@ -35,7 +35,7 @@
     "dotenv": "^6.2.0",
     "eslint": "^5.14.1",
     "eslint-config-loopback": "^13.0.0",
-    "loopback-datasource-juggler": "^4.5.3",
+    "loopback-datasource-juggler": "^4.5.4",
     "mocha": "^6.0.0",
     "should": "^13.2.3"
   }
