@@ -62,7 +62,7 @@ Dyaa Eldin Moustafa [Firestore connector][3]
 
 ### License
 
-Copylefted (c) 2018 [Henrique Carvalho da Cruz][1] Licensed under the [MIT license][2].
+Copylefted (c) 2019 [Henrique Carvalho da Cruz][1] Licensed under the [MIT license][2].
 
 [1]: https://henriquecarv.com
 [2]: ./LICENSE
