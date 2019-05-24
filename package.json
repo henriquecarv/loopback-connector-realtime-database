@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "eslint .",
     "test": "mocha --exit",
-    "prepublish": "node ./scripts/npm-login.js"
+    "prepublishOnly": "node ./scripts/npm-login.js"
   },
   "repository": {
     "type": "git",
