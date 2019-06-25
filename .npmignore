@@ -1,0 +1,10 @@
+test/
+.github/
+.editorconfig
+.eslint*
+.gitignore
+.mocharc
+scripts/
+azure-pipelines.yml
+*.md
+.env*
