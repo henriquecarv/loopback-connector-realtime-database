@@ -27,7 +27,7 @@
   "bugs": "https://github.com/henriquecarv/loopback-connector-realtime-database/issues",
   "dependencies": {
     "firebase-admin": "^8.2.0",
-    "loopback-connector": "^4.7.0"
+    "loopback-connector": "^4.8.0"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",
