@@ -6,7 +6,9 @@
   "scripts": {
     "lint": "eslint .",
     "test": "mocha --exit",
-    "prepublishOnly": "node ./scripts/npm-login.js"
+    "prepublishOnly": "node ./scripts/npm-login.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -27,7 +29,8 @@
   "bugs": "https://github.com/henriquecarv/loopback-connector-realtime-database/issues",
   "dependencies": {
     "firebase-admin": "^8.2.0",
-    "loopback-connector": "^4.8.0"
+    "loopback-connector": "^4.8.0",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",
@@ -40,5 +43,6 @@
     "mocha": "^6.1.4",
     "npm-cli-login": "^0.1.1",
     "should": "^13.2.3"
-  }
+  },
+  "snyk": true
 }
