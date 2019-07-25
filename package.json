@@ -30,7 +30,7 @@
   "dependencies": {
     "firebase-admin": "^8.2.0",
     "loopback-connector": "^4.8.0",
-    "snyk": "^1.189.0"
+    "snyk": "^1.199.1"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",
