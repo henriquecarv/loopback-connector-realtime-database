@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
-    "test": "mocha --exit",
-    "prepublishOnly": "node ./scripts/npm-login.js"
+    "test": "mocha --exit"
   },
   "repository": {
     "type": "git",
