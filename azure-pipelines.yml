@@ -19,3 +19,7 @@ steps:
   - script: |
       npm run lint
     displayName: 'Eslint check'
+
+  - script: |
+      npm run test
+    displayName: 'Automated Tests'
