@@ -27,7 +27,7 @@ describe('Loopback Firebase', () => {
         customer.should.have.property('emails').with.lengthOf(2);
 
         done(error, customer);
-      }
+      },
     );
   });
 
@@ -45,7 +45,7 @@ describe('Loopback Firebase', () => {
         customer.should.have.property('emails').with.lengthOf(1);
 
         done(error, customer);
-      }
+      },
     );
   });
 
@@ -95,7 +95,7 @@ describe('Loopback Firebase', () => {
         customer.should.have.property('emails').with.lengthOf(1);
 
         done(error, customer);
-      }
+      },
     );
   });
 
