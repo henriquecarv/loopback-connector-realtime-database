@@ -107,15 +107,15 @@ describe('Loopback Firebase', () => {
     );
   });
 
-  it('Should delete an entity', (done) => {
-    Customer.destroyAll({id: customer1.id}, (error, customer) => {
-      done(error, customer);
-    });
-  });
+  // it('Should delete an entity', (done) => {
+  //   Customer.destroyAll({id: customer1.id}, (error, customer) => {
+  //     done(error, customer);
+  //   });
+  // });
 
-  it('Should delete all entities', (done) => {
-    Customer.destroyAll(null, (error, customer) => {
-      done(error, customer);
-    });
-  });
+  // it('Should delete all entities', (done) => {
+  //   Customer.destroyAll(null, (error, customer) => {
+  //     done(error, customer);
+  //   });
+  // });
 });
