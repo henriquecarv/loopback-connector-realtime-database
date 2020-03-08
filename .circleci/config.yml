@@ -14,6 +14,6 @@ jobs:
             - run: yarn lint
             - run: yarn test
 workflows:
-  build-and-test:
+  lint-and-test:
     jobs:
       - lint-and-test
