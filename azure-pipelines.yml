@@ -4,18 +4,22 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
 
 pool:
-  vmImage: 'Ubuntu 16.04'
+  vmImage: "Ubuntu 16.04"
 
 steps:
   - task: NodeTool@0
     inputs:
-      versionSpec: '10.x'
-    displayName: 'Install Node.js'
+      versionSpec: "10.x"
+    displayName: "Install Node.js"
 
   - script: |
-      npm install
-    displayName: 'Install NPM packages'
+      yarn
+    displayName: "Install NPM packages"
 
   - script: |
-      npm run lint
-    displayName: 'Eslint check'
+      yarn lint
+    displayName: "Eslint check"
+
+  - script: |
+      yarn test
+    displayName: "Automated Test"

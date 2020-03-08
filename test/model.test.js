@@ -13,7 +13,7 @@ describe('Loopback Firebase', () => {
   let customer1 = undefined;
   let customer2 = undefined;
 
-  it('Should get all entities without records', (done) => {
+  it('Should get all entities without records', done => {
     Customer.all((error, customer) => {
       customer.should.have.length(0);
 
@@ -21,7 +21,7 @@ describe('Loopback Firebase', () => {
     });
   });
 
-  it('Should create a Customer entity', (done) => {
+  it('Should create a Customer entity', done => {
     Customer.create(
       {
         name: 'Henrique Carvalho da Cruz',
@@ -39,7 +39,7 @@ describe('Loopback Firebase', () => {
     );
   });
 
-  it('Should create another Customer entity', (done) => {
+  it('Should create another Customer entity', done => {
     Customer.create(
       {
         name: 'Orion Cruz',
@@ -57,7 +57,7 @@ describe('Loopback Firebase', () => {
     );
   });
 
-  it('Should count 2 entities', (done) => {
+  it('Should count 2 entities', done => {
     Customer.count((error, customer) => {
       customer.should.be.exactly(2).and.be.a.Number();
 
@@ -65,7 +65,7 @@ describe('Loopback Firebase', () => {
     });
   });
 
-  it('Should find an Entity by id', (done) => {
+  it('Should find an Entity by id', done => {
     Customer.find({where: {id: customer1.id}}, (error, customer) => {
       // eslint-disable-next-line no-unused-expressions
       customer.should.be.object;
@@ -75,7 +75,7 @@ describe('Loopback Firebase', () => {
     });
   });
 
-  it('Should get object properties', (done) => {
+  it('Should get object properties', done => {
     Customer.find({where: {id: customer1.id}}, (error, customer) => {
       customer.should.containDeep({name: customer1.name});
       customer.should.containDeep({age: customer1.age});
@@ -84,7 +84,7 @@ describe('Loopback Firebase', () => {
     });
   });
 
-  it('Should get all entities', (done) => {
+  it('Should get all entities', done => {
     Customer.all((error, customer) => {
       customer.should.have.length(2);
       customer.should.containDeep([{id: customer1.id}]);
@@ -94,7 +94,7 @@ describe('Loopback Firebase', () => {
     });
   });
 
-  it('Should replace attributes for a model entity', (done) => {
+  it('Should replace attributes for a model entity', done => {
     Customer.replaceById(
       customer1.id,
       {emails: ['bar@example.com']},
@@ -107,15 +107,15 @@ describe('Loopback Firebase', () => {
     );
   });
 
-  // it('Should delete an entity', (done) => {
-  //   Customer.destroyAll({id: customer1.id}, (error, customer) => {
-  //     done(error, customer);
-  //   });
-  // });
+  it('Should delete an entity', done => {
+    Customer.destroyAll({id: customer1.id}, (error, customer) => {
+      done(error, customer);
+    });
+  });
 
-  // it('Should delete all entities', (done) => {
-  //   Customer.destroyAll(null, (error, customer) => {
-  //     done(error, customer);
-  //   });
-  // });
+  it('Should delete all entities', done => {
+    Customer.destroyAll(null, (error, customer) => {
+      done(error, customer);
+    });
+  });
 });
