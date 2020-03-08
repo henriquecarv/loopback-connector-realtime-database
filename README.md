@@ -62,7 +62,7 @@ Dyaa Eldin Moustafa [Firestore connector][3]
 
 ### License
 
-Copylefted (c) 2019 [Henrique Carvalho da Cruz][1] Licensed under the [MIT license][2].
+Copylefted (c) 2020 [Henrique Carvalho da Cruz][1] Licensed under the [MIT license][2].
 
 [1]: https://henriquecarv.com
 [2]: ./LICENSE
@@ -70,5 +70,3 @@ Copylefted (c) 2019 [Henrique Carvalho da Cruz][1] Licensed under the [MIT licen
 [4]: https://console.cloud.google.com/projectselector/iam-admin/serviceaccounts
 [5]: http://loopback.io/getting-started/
 [6]: https://loopback.io/doc/en/lb3/Environment-specific-configuration.html#data-source-configuration
-
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fhenriquecarv%2Floopback-connector-realtime-database.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fhenriquecarv%2Floopback-connector-realtime-database?ref=badge_large)
