@@ -3,7 +3,7 @@
 Firebase Realtime Database connector for the LoopBack framework.
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/f85d1ad39a064c84b08f5ad6dd10cd45)](https://app.codacy.com/app/henriquecarv/loopback-connector-realtime-database?utm_source=github.com&utm_medium=referral&utm_content=henriquecarv/loopback-connector-realtime-database&utm_campaign=Badge_Grade_Settings)
-[![Build Status](https://dev.azure.com/henriquecarvgit/henriquecarvgit/_apis/build/status/henriquecarv.loopback-connector-realtime-database?branchName=master)](https://dev.azure.com/henriquecarvgit/henriquecarvgit/_build/latest?definitionId=4)
+[![CircleCI](https://img.shields.io/circleci/build/github/henriquecarv/loopback-connector-realtime-database?token=6144cd39f520a63a44b5007e07f958aa72ae3171)](https://circleci.com/gh/henriquecarv/loopback-connector-realtime-database)
 [![npm](https://img.shields.io/npm/dt/loopback-connector-realtime-database.svg)](https://www.npmjs.com/package/loopback-connector-realtime-database)
 [![npm](https://img.shields.io/npm/v/loopback-connector-realtime-database.svg)](https://www.npmjs.com/package/loopback-connector-realtime-database)
 [![LICENSE](https://img.shields.io/github/license/henriquecarv/loopback-connector-realtime-database.svg)](./LICENSE)
