@@ -1,10 +1,11 @@
 {
-  "extends": "loopback",
+  "extends": ["loopback", "prettier"],
+  "plugins": ["prettier"],
   "parserOptions": {
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
   "rules": {
-    "max-len": "off"
+    "prettier/prettier": "error"
   }
 }

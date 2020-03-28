@@ -1,1 +1,1 @@
-module.exports = require('./lib/realtime-database.js');
+module.exports = require("./lib/realtime-database.js");
