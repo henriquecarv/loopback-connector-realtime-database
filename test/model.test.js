@@ -126,7 +126,7 @@ describe("Loopback Firebase", () => {
   it("Should find entities by age less than 30", (done) => {
     Customer.find({ where: { age: { lt: 30 } } }, (error, customer) => {
       customer.should.have.length(2);
-      customer.should.containDeep([{ age: 28 }]);
+      customer.should.containDeep([{ age: customer1.age }]);
       customer.should.containDeep([{ id: customer1.id }]);
 
       done(error);
