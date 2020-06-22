@@ -26,7 +26,7 @@ describe("Loopback Firebase", () => {
       {
         name: "Henrique Carvalho da Cruz",
         emails: ["noreply@henrique.me", "foo@bar.com"],
-        age: 28,
+        age: 29,
       },
       (error, customer) => {
         customer1 = customer;
@@ -123,10 +123,10 @@ describe("Loopback Firebase", () => {
     });
   });
 
-  it("Should find entities by age less than 28", (done) => {
-    Customer.find({ where: { age: { lt: 28 } } }, (error, customer) => {
+  it("Should find entities by age less than 30", (done) => {
+    Customer.find({ where: { age: { lt: 30 } } }, (error, customer) => {
       customer.should.have.length(2);
-      customer.should.containDeep([{ age: 27 }]);
+      customer.should.containDeep([{ age: 28 }]);
       customer.should.containDeep([{ id: customer1.id }]);
 
       done(error);
