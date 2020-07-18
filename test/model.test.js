@@ -44,6 +44,7 @@ describe("Loopback Firebase", () => {
       {
         name: "Orion Cruz",
         emails: ["orion@cruz.com"],
+        type: "Animal",
         age: 4,
       },
       (error, customer) => {
@@ -158,8 +159,8 @@ describe("Loopback Firebase", () => {
 
   it("Should replace values for models with same property value", (done) => {
     Customer.update(
-      { where: { type: "Animal" } },
-      { emails: ["animal@example.com"] },
+      { where: { type: "Animal", name: "Orion Cruz" } },
+      { emails: ["animal@example.com", "orion@cruz.com"], name: "Orionz" },
       (error, customer) => {
         customer.should.containDeep([{ emails: ["animal@example.com"] }]);
 
