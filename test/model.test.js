@@ -26,7 +26,7 @@ describe("Loopback Firebase", () => {
       {
         name: "Henrique Carvalho da Cruz",
         emails: ["noreply@henrique.me", "foo@bar.com"],
-        age: 29,
+        age: 28,
       },
       (error, customer) => {
         customer1 = customer;
@@ -97,7 +97,6 @@ describe("Loopback Firebase", () => {
 
   it("Should get one entity from all using limit filter", (done) => {
     Customer.all({ limit: 1 }, (error, customer) => {
-      // console.log("LIMIT", customer);
       customer.should.have.length(1);
       customer.should.containDeep([{ id: customer1.id }]);
 
@@ -134,7 +133,7 @@ describe("Loopback Firebase", () => {
     });
   });
 
-  it("Should find an entity by age equals to 2", (done) => {
+  it("Should find an entity by age equals to 28", (done) => {
     Customer.find({ where: { age: customer1.age } }, (error, customer) => {
       customer.should.have.length(1);
       customer.should.containDeep([{ age: customer1.age }]);
@@ -169,17 +168,13 @@ describe("Loopback Firebase", () => {
     );
   });
 
-  it("Should combine multiple filters", (done) => {
+  it("Should find an entity by age equals to 4, keeping the age and id properties", (done) => {
     Customer.find(
-      {
-        where: { emails: ["animal@example.com", "orion@cruz.com"] },
-        fields: { emails: true },
-      },
+      { where: { age: customer2.age }, fields: { age: true, id: true } },
       (error, customer) => {
         customer.should.have.length(1);
-        customer.should.containDeep([{ age: customer1.age }]);
-        customer.should.containDeep([{ emails: customer1.emails }]);
-        customer.should.not.containDeep([{ age: customer1.age }]);
+        customer.should.containDeep([{ age: customer2.age }]);
+        customer.should.containDeep([{ id: customer2.id }]);
 
         done(error);
       }
