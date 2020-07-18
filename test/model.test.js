@@ -169,6 +169,23 @@ describe("Loopback Firebase", () => {
     );
   });
 
+  it("Should combine multiple filters", (done) => {
+    Customer.find(
+      {
+        where: { emails: ["animal@example.com", "orion@cruz.com"] },
+        fields: { emails: true },
+      },
+      (error, customer) => {
+        customer.should.have.length(1);
+        customer.should.containDeep([{ age: customer1.age }]);
+        customer.should.containDeep([{ emails: customer1.emails }]);
+        customer.should.not.containDeep([{ age: customer1.age }]);
+
+        done(error);
+      }
+    );
+  });
+
   it("Should delete an entity", (done) => {
     Customer.destroyAll({ id: customer1.id }, (error, customer) => {
       done(error, customer);
