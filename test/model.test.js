@@ -26,7 +26,7 @@ describe("Loopback Firebase", () => {
       {
         name: "Henrique Carvalho da Cruz",
         emails: ["noreply@henrique.me", "foo@bar.com"],
-        age: 26,
+        age: 28,
       },
       (error, customer) => {
         customer1 = customer;
@@ -44,7 +44,8 @@ describe("Loopback Firebase", () => {
       {
         name: "Orion Cruz",
         emails: ["orion@cruz.com"],
-        age: 1,
+        type: "Animal",
+        age: 4,
       },
       (error, customer) => {
         customer2 = customer;
@@ -94,6 +95,54 @@ describe("Loopback Firebase", () => {
     });
   });
 
+  it("Should get one entity from all using limit filter", (done) => {
+    Customer.all({ limit: 1 }, (error, customer) => {
+      customer.should.have.length(1);
+      customer.should.containDeep([{ id: customer1.id }]);
+
+      done(error);
+    });
+  });
+
+  it("Should get Orion as first Entity in the array", (done) => {
+    Customer.all({ order: "age DESC" }, (error, customer) => {
+      customer.should.have.length(2);
+      customer.should.containDeep([{ id: customer2.id }]);
+
+      done(error);
+    });
+  });
+
+  it("Should get a specific field from all entities", (done) => {
+    Customer.all({ fields: { emails: true } }, (error, customer) => {
+      customer.should.have.length(2);
+      customer.should.containDeep([{ emails: customer1.emails }]);
+      customer.should.not.containDeep([{ age: customer1.age }]);
+
+      done(error);
+    });
+  });
+
+  it("Should find entities by age less than 30", (done) => {
+    Customer.find({ where: { age: { lt: 30 } } }, (error, customer) => {
+      customer.should.have.length(2);
+      customer.should.containDeep([{ age: customer1.age }]);
+      customer.should.containDeep([{ id: customer1.id }]);
+
+      done(error);
+    });
+  });
+
+  it("Should find an entity by age equals to 28", (done) => {
+    Customer.find({ where: { age: customer1.age } }, (error, customer) => {
+      customer.should.have.length(1);
+      customer.should.containDeep([{ age: customer1.age }]);
+      customer.should.containDeep([{ id: customer1.id }]);
+
+      done(error);
+    });
+  });
+
   it("Should replace attributes for a model entity", (done) => {
     Customer.replaceById(
       customer1.id,
@@ -103,6 +152,31 @@ describe("Loopback Firebase", () => {
         customer.should.have.property("emails").with.lengthOf(1);
 
         done(error, customer);
+      }
+    );
+  });
+
+  it("Should replace values for models with same property value", (done) => {
+    Customer.update(
+      { where: { type: "Animal", name: "Orion Cruz" } },
+      { emails: ["animal@example.com", "orion@cruz.com"], name: "Orionz" },
+      (error, customer) => {
+        customer.should.containDeep([{ emails: ["animal@example.com"] }]);
+
+        done(error);
+      }
+    );
+  });
+
+  it("Should find an entity by age equals to 4, keeping the age and id properties", (done) => {
+    Customer.find(
+      { where: { age: customer2.age }, fields: { age: true, id: true } },
+      (error, customer) => {
+        customer.should.have.length(1);
+        customer.should.containDeep([{ age: customer2.age }]);
+        customer.should.containDeep([{ id: customer2.id }]);
+
+        done(error);
       }
     );
   });
