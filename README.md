@@ -26,7 +26,7 @@ lb datasource
 
 Then the data source generator will prompt some questions like
 
-- Enter the data-source name: **Firebase** _(Choose your prefered name)_
+- Enter the data-source name: **Firebase**
 - Select the connector for Firebase: **other**
 - Enter the connector's module name **loopback-connector-realtime-database**
 - Install loopback-connector-realtime-database (Y/n) **y**
