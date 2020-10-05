@@ -30,7 +30,7 @@
     "loopback-connector": "^4.11.1"
   },
   "devDependencies": {
-    "acorn": "^7.4.0",
+    "acorn": "^8.0.4",
     "dotenv": "^8.2.0",
     "eslint": "^7.6.0",
     "eslint-config-loopback": "^13.1.0",
