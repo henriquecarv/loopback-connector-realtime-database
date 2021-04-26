@@ -34,7 +34,7 @@
     "dotenv": "^8.2.0",
     "eslint": "^7.6.0",
     "eslint-config-loopback": "^13.1.0",
-    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.1.4",
     "husky": "^4.2.5",
     "loopback-datasource-juggler": "^4.24.0",
