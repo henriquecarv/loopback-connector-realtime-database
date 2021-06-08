@@ -38,7 +38,7 @@
     "eslint-plugin-prettier": "^3.1.4",
     "husky": "^4.2.5",
     "loopback-datasource-juggler": "^4.24.0",
-    "mocha": "^8.1.1",
+    "mocha": "^9.0.0",
     "prettier": "^2.0.5",
     "should": "^13.2.3"
   }
